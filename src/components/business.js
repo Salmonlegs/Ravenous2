@@ -1,4 +1,5 @@
 import React from 'react';
+import './Business.css'
 
 const business = {
 imageSrc: 'https://s3.amazonaws.com/codecademy-content/programs/react/ravenous/pizza.jpg',
@@ -12,27 +13,29 @@ rating: 4.5,
 reviewCount: 90
 };
 
-class Business extends React.business {
+class Business extends React.Business {
   render() {
     return (
       <div classname="Business">
         <div classname="image-container">
-          <img src={business.imageSrc} alt=''/>
+          <img src={Business.imageSrc} alt=''/>
         </div>
-        <h2>{business.name}</h2>
+        <h2>{Business.name}</h2>
         <div classname="Business-information">
           <div classname="Business-address">
-            <p>{business.address}</p>
-            <p>{business.city}</p>
+            <p>{Business.address}</p>
+            <p>{Business.city}</p>
             <p>{`{business.state} {business.zipCode}`}</p>
           </div>
           <div classname="Business-reviews">
-            <h3>{business.category}</h3>
-            <h3 classname="rating">`${business.rating} stars`}</h3>
-            <p>`${business.reviewCount} reviews`</p>
+            <h3>{Business.category}</h3>
+            <h3 classname="rating">`${Business.rating} stars`}</h3>
+            <p>`${Business.reviewCount} reviews`</p>
           </div>
         </div>
       </div>
     );
   }
 }
+
+export default Business;
