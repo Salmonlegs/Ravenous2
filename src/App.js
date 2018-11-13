@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import logo from './logo.svg';
 import BusinessList from './Components/BusinessList/BusinessList';
 import SearchBar from './Components/SearchBar/SearchBar';
 
@@ -27,6 +26,11 @@ const businesses = [
 
 
 class App extends Component {
+  
+  searchYelp(term, location, sortBy) {
+    console.log(`Searching yelp with ${term}, ${location}, ${sortBy}`);
+  }
+
   render() {
     return (
       <div className="App">
